@@ -1,4 +1,4 @@
-{% set version = "2.2.6" %}
+{% set version = "2.2.7" %}
 
 package:
   name: kafka-python
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/k/kafka-python/kafka_python-{{ version }}.tar.gz
-  sha256: b18a15e614864afedd514cc75f203cc3555bb85b915326c9fce0e49a80ca441f
+  sha256: c3527d3543c5c932c8cec86726d2f7625c4cb059e9a6ad483088d007a6f66913
 
 build:
   noarch: python
