@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "3.0.0"
+  version: "3.0.1"
 
 package:
   name: kafka-python
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/k/kafka-python/kafka_python-${{ version }}.tar.gz
-  sha256: c9bf82fdf8a6d9aae12b3ab1f86968d88080b96bb71e1c6184ec3a2239b6c6d4
+  sha256: 33585f8cc7003f5ea766c78b457453f2fa19c9b5409854af3b235b9270698a3d
 
 build:
   number: 0
@@ -44,7 +44,7 @@ tests:
       pip_check: true
       python_version: ${{ python_min }}.*
   - script:
-    - kafka-python --help
+      - kafka-python --help
     requirements:
       run:
         - python ${{ python_min }}.*
